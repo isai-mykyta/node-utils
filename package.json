@@ -1,0 +1,40 @@
+{
+  "name": "@mykyta-isai/node-utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "nktisai@gmail.com",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage --verbose",
+    "build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@my-github:isai-mykyta/node-utils.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@mykyta-isai/eslint-config": "^1.0.3",
+    "@types/node": "^24.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "eslint": "^9.29.0",
+    "eslint-plugin-import": "^2.31.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@valkey/valkey-glide": "^2.2.0",
+    "axios": "^1.13.2",
+    "kafkajs": "^2.2.4",
+    "typescript": "^5.9.2",
+    "winston": "^3.18.3"
+  }
+}
