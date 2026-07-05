@@ -1,14 +1,22 @@
 {
-  "name": "node-utils",
+  "name": "@mykyta-isai/service-utils",
   "version": "0.0.1",
   "description": "Library with shared tools",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "nktisai@gmail.com",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint . --ext .ts",
     "dev": "ts-node src/index.ts",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
