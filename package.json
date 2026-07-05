@@ -1,0 +1,26 @@
+{
+  "name": "node-utils",
+  "version": "0.0.1",
+  "description": "Library with shared tools",
+  "main": "index.js",
+  "author": "nktisai@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@mykyta-isai/eslint-config": "^1.0.3",
+    "@types/node": "^26.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.62.1",
+    "@typescript-eslint/parser": "^8.62.1",
+    "eslint": "^10.6.0",
+    "eslint-plugin-import": "^2.32.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
+  }
+}
